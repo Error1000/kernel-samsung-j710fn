@@ -147,7 +147,7 @@ fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS438) += tsp_melfas/mms438_j7x.fw tsp_m
 
 fw-shipped-$(CONFIG_TOUCHSCREEN_ATMEL_MXT1664) += tsp_atmel/mxt1664t_matisse.fw
 
-TSPFIRMWARE_DIRECTORY = firmware/tsp_stm
+TSPFIRMWARE_DIRECTORY = tsp_stm
 ifeq ($(shell test -d $(TSPFIRMWARE_DIRECTORY) && echo yes),yes)
 fw-shipped-$(CONFIG_TOUCHSCREEN_FTS7) += tsp_stm/matisse.fw tsp_stm/stm_gtaxl.fw tsp_stm/fts1a096_gtaxl_rev03.fw \
 					tsp_stm/fts1a096_gtaxl_note.fw
@@ -202,7 +202,6 @@ fw-shipped-$(CONFIG_SENSORS_SSP_2017A3) += ssp_stmf410_a2017.fw
 fw-shipped-$(CONFIG_SENSORS_SSP_A3XPREMIUM) += ssp_stmf410_a3p.fw
 fw-shipped-$(CONFIG_SENSORS_SSP_A3Y17PREMIUM) += ssp_stmf410_a2017_p.fw
 fw-shipped-$(CONFIG_SENSORS_SSP_STM32) += ssp_crashed.fw
-fw-shipped-$(CONFIG_SENSORS_SSP_STM_V2) += ssp_crashed.fw
 
 # FPGA for IRIS
 fw-shipped-$(CONFIG_LEDS_IRIS_FPGA_ICE40XX) += ice40xx/ice40_fpga_iris_V01.fw
